@@ -1,0 +1,45 @@
+.Input {
+    height: 100%;
+    width: 100%;
+}
+
+.input__form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.input__input {
+    height: 100%;
+    width: 100%;
+    padding-left: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    border: 3px solid rgb(102, 129, 134);
+    border-right: 0;
+}
+
+.input__input:focus {
+    border: 3px solid rgb(96, 146, 255);
+    border-right: 0;
+}
+
+.input__input:focus ~ .input__button {
+    border: 3px solid rgb(96, 146, 255);
+    border-left: 0;
+}
+
+.input__button {
+    margin: 0;
+    padding: 0px 3px;
+    min-width: 100px;
+    border: 3px solid rgb(102, 129, 134);
+    border-left: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+
+    background-color: rgb(35, 91, 245);
+}

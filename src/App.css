@@ -1,0 +1,66 @@
+.App {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.a {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+}
+/* this wrapper for main central block (it aviable show message and bar blocks). flex:1 - let scretch this block */
+.b {
+    flex: 1;
+}
+
+.c {
+    width: 100%;
+    height: 60px;
+}
+
+.wrapper__bar__mobile {
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+
+.wrapper__bar__desctop {
+    display: inline-block;
+    height: 100%;
+    width: 300px;
+}
+
+.wrapper__message {
+    display: flex;
+    flex-wrap: nowrap;
+    height: calc(100vh - 120px);
+    width: 100%;
+}
+/* this fix for mobile version app, active when show bar menu*/
+.wrapper__message.fix {
+    display: block;
+    height: calc(100vh - 180px);
+}
+/* this special wrapper for Message block, it keeps the desired height, let see left side bar for desctop when scroll content in Message block */
+.message__block {
+    flex: 1;
+    height: 100%;
+    overflow-y: auto;
+    background: #515558;
+}
+
+.message__block::-webkit-scrollbar {
+    width: 10px;
+}
+  
+.message__block::-webkit-scrollbar-track {
+    background: #515558;      
+}
+  
+.message__block::-webkit-scrollbar-thumb {
+    background-color: rgb(226, 168, 42);
+    border-radius: 20px;       
+    border: 3px solid #515558;
+}
