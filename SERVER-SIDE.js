@@ -1,6 +1,6 @@
 const app = require('express')();
 const http = require('http').createServer(app);
-const PORT = process.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 const bodyParser = require('body-parser').json();
 const session = require('express-session');
 const CLIENT_URL = 'https://blooming-beach-21007.herokuapp.com';  // URL*
